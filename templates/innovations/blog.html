@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<!--    <link rel="stylesheet" href="{% static 'assets/wp-content/cache/min/4/0afb30d440a36e0fb54545a8f32a3f1e.css' %}"-->
+<!--          media="all"-->
+<!--          data-minify="1"/>-->
+<link rel="stylesheet" href="{% static 'assets/wp-content/cache/min/4/e30256f08cbeee3a700f4b3bd6ddbd05.css' %}"
+      media="all"
+      data-minify="1"/>
+{% endblock %}
+
+{% block content %}
+<div id="content" class="site-content">
+
+    <div data-bg="{% static 'assets/wp-content/uploads/sites/4/2019/12/bg-pheader.jpg'%}"
+         class="page-header flex-middle rocket-lazyload" style="">
+        <div class="container">
+            <div class="inner flex-middle">
+                <h1 class="page-title">Blog</h1>
+                <ul id="breadcrumbs" class="breadcrumbs none-style">
+                    <li><a href="http://wpdemo.archiwp.com/engitech">Home</a></li>
+                    <li class="active">Blog</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="entry-content">
+        <div class="container">
+            <div class="row">
+                <div id="primary" class="content-area col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <main id="main" class="site-main">
+
+
+                         {% for post in all_posts %}
+                         {% include "blog/includes/post.html" %}
+                         {% endfor %}
+
+
+
+
+                    </main><!-- #main -->
+                </div><!-- #primary -->
+
+<!--                jina peterson ceo part and recent posts-->
+                <aside id="primary-sidebar" class="widget-area primary-sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <section id="author_widget-1" class="widget engitech_author-widget">
+                        <div class="author-widget_wrapper text-center">
+                            <div class="author-widget_image-wrapper">
+                                <img class="author-widget_image"
+                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                     alt="Jina Peterson"
+                                     data-lazy-src="{% static 'assets/wp-content/uploads/sites/4/2019/12/suzzy Photo.jpg'%}">
+                                <noscript><img class="author-widget_image"
+                                               src="{% static 'assets/wp-content/uploads/sites/4/2019/12/   Suzzy Photo.jpg'%}"
+                                               alt="Jina Peterson"></noscript>
+                            </div>
+                            <div class="author-widget_info">
+                                <h5 class="author-widget_title">Suzy Niyang</h5>
+<!--                                <p class="author-widget_text">She is the CEO.</p>-->
+                                <div class="author-widget_social">
+                                    <a class="social-twitter" href="#"><i class="fab fa-twitter"></i></a> <a
+                                        class="social-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+
+                                    <a class="social-linkedin" href="#"><i class="fab fa-linkedin-in"></i></a> <a
+                                        class="social-instagram" href="#"><i class="fab fa-instagram"></i></a></div>
+                            </div>
+                        </div>
+
+
+                    </section>
+                    <section id="recent_news-1" class="widget widget_recent_news">
+                        <h5 class="widget-title">Recent Posts</h5>
+
+<!--                    Recent post-->
+                    {% for post in all_posts %}
+                         {% include "blog/includes/recent.html" %}
+                    {% endfor %}
+
+                    </section>
+                </aside><!-- #secondary -->
+            </div>
+        </div>
+    </div>
+
+
+</div><!-- #content -->
+{% endblock %}

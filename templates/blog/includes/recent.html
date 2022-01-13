@@ -1,0 +1,30 @@
+
+                        <ul class="recent-news clearfix">
+                            <li class="clearfix">
+                                <div class="thumb">
+                                    <a href="{% url 'support:post-detail-page' slug=post.slug %}">
+                                        <img width="150" height="150"
+                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"
+                                             class="attachment-thumbnail size-thumbnail wp-post-image" alt=""
+                                             data-lazy-srcset="{{ post.image.url}} 150w, {{ post.image.url}} 70w"
+                                             data-lazy-sizes="(max-width: 150px) 100vw, 150px"
+                                             data-lazy-src="{{ post.image.url}}"/>
+                                        <noscript><img width="150" height="150"
+                                                       src="{{ post.image.url}}"
+                                                       class="attachment-thumbnail size-thumbnail wp-post-image" alt=""
+                                                       srcset="{{ post.image.url}} 150w, {{ post.image.url}} 70w"
+                                                       sizes="(max-width: 150px) 100vw, 150px"/></noscript>
+                                    </a>
+                                </div>
+                                <div class="entry-header">
+                                    <h6>
+                                        <a href="{% url 'support:post-detail-page' slug=post.slug %}">{{post.title}}</a>
+                                    </h6>
+                                    <span class="post-on">
+                            <span class="entry-date">{{post.date}}</span>
+                        </span>
+                                </div>
+                            </li>
+
+                        </ul>
+

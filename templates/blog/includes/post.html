@@ -1,0 +1,61 @@
+
+
+<article id="post-1263" class="post-box masonry-post-item post-1263 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-development tag-business tag-marketing tag-seo">
+    <div class="post-inner">
+        <div class="entry-media">
+            <!--                                    <div class="post-cat"><span class="posted-in"><a-->
+            <!--                                            href="../category/design/index.html" rel="category tag">Design</a> <a-->
+            <!--                                            href="../category/development/index.html" rel="category tag">Development</a></span>-->
+            <!--                                    </div>-->
+            <a href="{% url 'support:post-detail-page' slug=post.slug %}">
+                <img width="870" height="520"
+                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20870%20520'%3E%3C/svg%3E"
+                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                     data-lazy-srcset="{{ post.image.url}} 870w, {{ post.image.url}} 300w, {{ post.image.url}} 768w, {{ post.image.url}} 720w"
+                     data-lazy-sizes="(max-width: 870px) 100vw, 870px"
+                     data-lazy-src="{{ post.image.url}}"/>
+                <noscript><img width="870" height="520"
+                               src="{{ post.image.url}}"
+                               class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                               alt=""
+                               srcset="{{ post.image.url}} 870w, {{ post.image.url}} 300w, {{ post.image.url}} 768w, {{ post.image.url}} 720w"
+                               sizes="(max-width: 870px) 100vw, 870px"/></noscript>
+            </a>
+        </div>
+
+
+        <div class="inner-post">
+            <div class="entry-header">
+
+                <div class="entry-meta">
+                    <span class="posted-on">_ <a href="../plan-your-project-with-your-software/index.html" rel="bookmark">
+                        <time class="entry-date published" datetime="2019-11-21T04:46:58+00:00">{{post.date}}</time></a></span>
+                    <span
+                        class="byline">_ <a class="url fn n" href="../author/admin/index.html">{{post.author}}</a></span><span
+                        class="comment-num">_</span>
+                </div><!-- .entry-meta -->
+
+                <h3 class="entry-title"><a
+                        href="{% url 'support:post-detail-page' slug=post.slug %}"
+                        rel="bookmark">{{post.title}}</a></h3>
+            </div><!-- .entry-header -->
+
+            <div class="entry-summary the-excerpt">
+
+                <p>{{post.excerpt}}</p>
+
+            </div><!-- .entry-content -->
+            <div class="btn-readmore">
+                <a href="{% url 'support:post-detail-page' slug=post.slug %}"><i
+                        class="flaticon-right-arrow-1"></i> LEARN MORE</a> <span
+                    class="sl-wrapper"><a
+                    href="../wp-admin/admin-ajaxe4c1.php?action=process_simple_like&amp;post_id=1263&amp;nonce=2053f14f25&amp;is_comment=0&amp;disabled=true"
+                    class="sl-button sl-button-1263" data-nonce="2053f14f25" data-post-id="1263"
+                    data-iscomment="0" title="Like"><span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path id="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span><span
+                    class="sl-count">396</a><span id="sl-loader"></span></span></div>
+        </div>
+    </div>
+</article>
+
+
+<!--Recent comment-->

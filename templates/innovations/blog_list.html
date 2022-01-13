@@ -1,0 +1,346 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<!--    <link rel="stylesheet" href="{% static 'assets/wp-content/cache/min/4/0afb30d440a36e0fb54545a8f32a3f1e.css' %}"-->
+<!--          media="all"-->
+<!--          data-minify="1"/>-->
+<link rel="stylesheet" href="{% static 'assets/wp-content/cache/min/4/e30256f08cbeee3a700f4b3bd6ddbd05.css' %}"
+      media="all"
+      data-minify="1"/>
+{% endblock %}
+
+{% block content %}
+
+
+<div id="content" class="site-content">
+
+    <div data-bg="{% static 'assets/wp-content/uploads/sites/4/2019/12/bg-pheader.jpg'%}"
+         class="page-header flex-middle rocket-lazyload" style="">
+        <div class="container">
+            <div class="inner flex-middle">
+                <h1 class="page-title">Single Blog</h1>
+                <ul id="breadcrumbs" class="breadcrumbs none-style">
+                    <li><a href="{% url "support:home5" %}">Home</a></li>
+                    <li><a href="{% url "support:posts" %}">Blog</a></li>
+
+                    <li class="active">{{post.title}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="entry-content">
+        <div class="container">
+            <div class="row">
+                <div id="primary" class="content-area col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <main id="main" class="site-main">
+
+
+                        <article id="post-1263"
+                                 class="blog-post post-box post-1263 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-development tag-business tag-marketing tag-seo">
+
+                            <div class="entry-media">
+
+                                <img width="870" height="520"
+                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20870%20520'%3E%3C/svg%3E"
+                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+                                     data-lazy-srcset="{{post.image.url}} 870w, {{post.image.url}} 300w, {{post.image.url}} 768w, {{post.image.url}} 720w"
+                                     data-lazy-sizes="(max-width: 870px) 100vw, 870px"
+                                     data-lazy-src="{{post.image.url}}"/>
+                                <noscript><img width="870" height="520"
+                                               src="{{post.image.url}}"
+                                               class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                               alt=""
+                                               srcset="{{post.image.url}} 870w, {{post.image.url}} 300w, {{post.image.url}} 768w, {{post.image.url}} 720w"
+                                               sizes="(max-width: 870px) 100vw, 870px"/></noscript>
+                            </div>
+
+                            <div class="inner-post">
+                                <header class="entry-header">
+
+                                    <div class="entry-meta">
+                                        <span class="posted-on">_ <a href="index.html" rel="bookmark"><time
+                                                class="entry-date published" datetime="2019-11-21T04:46:58+00:00">{{post.date}}</time></a></span><span
+                                            class="byline">_ <a class="url fn n" href="../author/admin/index.html">{{post.author}}</a></span><span
+                                            class="comment-num"></span>
+                                    </div><!-- .entry-meta -->
+
+                                    <h1 class="entry-title">{{ post.title }}</h1>
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-summary">
+
+                                    <p> {{ post.content | linebreaks }}
+
+
+                                </div><!-- .entry-content -->
+                                <div class="entry-footer clearfix">
+                                    <div class="tagcloud"><a href="../tag/business/index.html" rel="tag">business</a> <a
+                                            href="../tag/marketing/index.html" rel="tag">marketing</a> <a
+                                            href="../tag/seo/index.html" rel="tag">SEO</a></div>
+                                    <span class="sl-wrapper"><a
+                                            href="../wp-admin/admin-ajaxe4c1.php?action=process_simple_like&amp;post_id=1263&amp;nonce=2053f14f25&amp;is_comment=0&amp;disabled=true"
+                                            class="sl-button sl-button-1263" data-nonce="2053f14f25" data-post-id="1263"
+                                            data-iscomment="0" title="Like"><span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path id="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span><span
+                                            class="sl-count">396</a><span id="sl-loader"></span></span></div>
+                                <div class="share-post"><a class="twit" target="_blank"
+                                                           href="https://twitter.com/intent/tweet?text=Plan%20Your%20Project%20%20with%20Your%20Software&amp;url=http://wpdemo.archiwp.com/engitech/plan-your-project-with-your-software/"
+                                                           title="Twitter"><i class="fab fa-twitter"></i></a><a
+                                        class="face" target="_blank"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=http://wpdemo.archiwp.com/engitech/plan-your-project-with-your-software/"
+                                        title="Facebook"><i class="fab fa-facebook-f"></i></a><a class="pint"
+                                                                                                 target="_blank"
+                                                                                                 href="https://www.pinterest.com/pin/create/button/?url=http://wpdemo.archiwp.com/engitech/plan-your-project-with-your-software/&amp;description=Plan%20Your%20Project%20%20with%20Your%20Software"
+                                                                                                 title="Pinterest"><i
+                                        class="fab fa-pinterest-p"></i></a><a class="linked" target="_blank"
+                                                                              href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://wpdemo.archiwp.com/engitech/plan-your-project-with-your-software/&amp;title=Plan%20Your%20Project%20%20with%20Your%20Software&amp;summary=http://wpdemo.archiwp.com&amp;source=Engitech"
+                                                                              title="LinkedIn"><i
+                                        class="fab fa-linkedin-in"></i></a><a class="reddit"
+                                                                              href="http://reddit.com/submit?url=http://wpdemo.archiwp.com/engitech/plan-your-project-with-your-software/&amp;title=Plan%20Your%20Project%20%20with%20Your%20Software"
+                                                                              target="_blank" title="Reddit"><i
+                                        class="fab fa-reddit-alien" aria-hidden="true"></i></a></div>
+                                <div class="author-bio">
+                                    <div class="author-image"><img data-del="avatar" alt=''
+                                                                   src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20250'%3E%3C/svg%3E"
+                                                                   class='avatar pp-user-avatar avatar-250 photo '
+                                                                   height='250' width='250'
+                                                                   data-lazy-src="{% static 'assets/wp-content/uploads/sites/4/2020/03/Suzzy Photo.jpg'%}"/>
+                                        <noscript><img data-del="avatar" alt=''
+                                                       src="{% static 'assets/wp-content/uploads/sites/4/2020/03/Suzzy Photo.jpg'%}"
+                                                       class='avatar pp-user-avatar avatar-250 photo ' height='250'
+                                                       width='250'/></noscript>
+                                    </div>
+                                    <div class="author-info"><p class="title text-primary font-second">Author</p><h6>{{post.author}}</h6>
+                                        <p class="des">She attended Federal University Of Technology Minna she majored in Computer Engineering</p>
+                                        <div class="author-socials"><a href="twitter.com" target="_blank" rel="nofollow"
+                                                                       title="Twitter" class="tooltip"><i
+                                                class="fab fa-twitter"></i> </a> <a href="facebook.com" target="_blank"
+                                                                                    rel="nofollow" title="Facebook"
+                                                                                    class="tooltip"><i
+                                                class="fab fa-facebook-f"></i> </a> <a href="linkedin.html"
+                                                                                       target="_blank" rel="nofollow"
+                                                                                       title="LinkedIn" class="tooltip"><i
+                                                class="fab fa-linkedin-in"></i> </a> <a href="instagram.com"
+                                                                                        target="_blank" rel="nofollow"
+                                                                                        title="Instagram"
+                                                                                        class="tooltip"><i
+                                                class="fab fa-instagram"></i> </a></div>
+                                    </div>
+                                </div>
+
+                                <div class="post-nav clearfix">
+                                    <div class="post-prev"><a href="../you-have-a-great-business-idea-2/index.html" rel="prev">
+                                        <h6>Your idea is great?</h6><span>November 21, 2021</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div id="comments" class="comments-area">
+
+
+                            <h4 class="comments-title">Comments</h4>
+
+
+                            <ol class="comment-list">
+                                 {% for comment in comments %}
+                                <li id="comment-5" class="comment even thread-even depth-1 comment-item">
+                                    <article class="comment-wrap clearfix">
+
+                                        <div class="gravatar">
+                                            <img data-del="avatar" alt=''
+                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2080%2080'%3E%3C/svg%3E"
+                                                 class='avatar pp-user-avatar avatar-80 photo ' height='80' width='80'
+                                                 data-lazy-src="{%static 'assets/wp-content/uploads/sites/4/2020/03/Suzzy Photo.jpg' %}"/>
+                                            <noscript><img data-del="avatar" alt=''
+                                                           src='{%static "assets/wp-content/uploads/sites/4/2020/03/Suzzy Photo.jpg"%}'
+                                                           class='avatar p p-user-avatar avatar-80 photo ' height='80'
+                                                           width='80'/></noscript>
+                                        </div>
+
+                                        <div class="comment-content">
+                                            <div class="comment-meta">
+                                                <h6 class="comment-author">{{comment.user_name}}</h6>
+                                                <span class="comment-time">{{comment.date}}</span>
+                                                <div class="comment-reply"><a rel='nofollow' class='comment-reply-link'
+                                                                              href='index8e42.html?replytocom=5#respond'
+                                                                              data-commentid="5" data-postid="1263"
+                                                                              data-belowelement="comment-5"
+                                                                              data-respondelement="respond"
+                                                                              data-replyto="Reply to Pablo Villalpando"
+                                                                              aria-label='Reply to Pablo Villalpando'>Reply</a>
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                <p>{{ comment.text | linebreaks }}</p>
+                                            </div>
+                                        </div>
+
+                                    </article>
+                                </li>
+
+
+                                </li><!-- #comment-## -->
+                                {% endfor %}<!-- #comment-## -->
+                            </ol><!-- .comment-list -->
+
+
+
+                            <div id="respond" class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a
+                                        rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond"
+                                        style="display:none;">Cancel reply</a></small></h3>
+                                <form action="{% url 'support:post-detail-page' slug=post.slug %}" method="POST" class="comment-form">
+                                     {% csrf_token %}
+                                     <p class="comment-notes">
+                                      <span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span>
+                                    </p>
+
+                                    {% for form_field in comment_form %}
+                                    <p class="comment-form-comment {% if form_field.errors %}invalid{% endif %}">
+                                        {{ form_field.label_tag}}
+                                         {{form_field}}
+                                        {{form_field.errors}}
+                                    </p>
+                                       {% endfor %}
+
+
+
+                                    <p class="comment-form-cookies-consent">
+                                        <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"/>
+                                        <label for="wp-comment-cookies-consent">Save my name, email, and website in this
+                                        browser for the next time I comment.</label>
+                                    </p>
+
+
+                                    <p class="form-submit">
+                                        <input name="submit" type="submit" id="submit" class="octf-btn" value="Post Comment"/>
+                                        <input type='hidden' name='comment_post_ID' value='1263' id='comment_post_ID'/>
+                                        <input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+                                    </p>
+                                </form>
+                            </div><!-- #respond -->
+
+                        </div><!-- #comments -->
+                    </main><!-- #main -->
+                </div><!-- #primary -->
+
+
+                <aside id="primary-sidebar" class="widget-area primary-sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <section id="author_widget-1" class="widget engitech_author-widget">
+                        <div class="author-widget_wrapper text-center">
+                            <div class="author-widget_image-wrapper">
+                                <img class="author-widget_image"
+                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                     alt="Jina Peterson"
+                                     data-lazy-src="{% static 'assets/wp-content/uploads/sites/4/2019/12/Suzzy Photo.jpg'%}">
+                                <noscript><img class="author-widget_image"
+                                               src="{% static 'assets/wp-content/uploads/sites/4/2019/12/Suzzy Photo.jpg'%}"
+                                               alt="Jina Peterson"></noscript>
+                            </div>
+                            <div class="author-widget_info">
+                                <h5 class="author-widget_title">Suzzy Niyang</h5>
+<!--                                <p class="author-widget_text"></p>-->
+                                <div class="author-widget_social">
+                                    <a class="social-twitter" href="#"><i class="fab fa-twitter"></i></a> <a
+                                        class="social-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+
+                                    <a class="social-linkedin" href="#"><i class="fab fa-linkedin-in"></i></a> <a
+                                        class="social-instagram" href="#"><i class="fab fa-instagram"></i></a></div>
+                            </div>
+                        </div>
+
+
+                    </section>
+<!--                    <section id="recent_news-1" class="widget widget_recent_news"><h5 class="widget-title">Recent-->
+<!--                        Posts</h5>-->
+<!--                        <ul class="recent-news clearfix">-->
+<!--                            <li class="clearfix">-->
+<!--                                <div class="thumb">-->
+<!--                                    <a href="index.html">-->
+<!--                                        <img width="150" height="150"-->
+<!--                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"-->
+<!--                                             class="attachment-thumbnail size-thumbnail wp-post-image" alt=""-->
+<!--                                             data-lazy-srcset="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog1-150x150.jpg'%} 150w, {% static 'assets/wp-content/uploads/sites/4/2019/11/blog1-70x70.jpg'%} 70w'%}"-->
+<!--                                             data-lazy-sizes="(max-width: 150px) 100vw, 150px"-->
+<!--                                             data-lazy-src="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog1-150x150.jpg'%}"/>-->
+<!--                                        <noscript><img width="150" height="150"-->
+<!--                                                       src="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog1-150x150.jpg'%}"-->
+<!--                                                       class="attachment-thumbnail size-thumbnail wp-post-image" alt=""-->
+<!--                                                       srcset="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog1-150x150.jpg'%} 150w, {% static 'assets/wp-content/uploads/sites/4/2019/11/blog1-70x70.jpg'%} 70w"-->
+<!--                                                       sizes="(max-width: 150px) 100vw, 150px"/></noscript>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div class="entry-header">-->
+<!--                                    <h6>-->
+<!--                                        <a href="index.html">Plan Your Project with Your Software</a>-->
+<!--                                    </h6>-->
+<!--                                    <span class="post-on">-->
+<!--                            <span class="entry-date">November 21, 2019</span>-->
+<!--                        </span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="clearfix">-->
+<!--                                <div class="thumb">-->
+<!--                                    <a href="../you-have-a-great-business-idea-2/index.html">-->
+<!--                                        <img width="150" height="150"-->
+<!--                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"-->
+<!--                                             class="attachment-thumbnail size-thumbnail wp-post-image" alt=""-->
+<!--                                             data-lazy-srcset="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog4-150x150.jpg'%} 150w, {% static 'assets/wp-content/uploads/sites/4/2019/11/blog4-70x70.jpg'%} 70w"-->
+<!--                                             data-lazy-sizes="(max-width: 150px) 100vw, 150px"-->
+<!--                                             data-lazy-src="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog4-150x150.jpg'%}"/>-->
+<!--                                        <noscript><img width="150" height="150"-->
+<!--                                                       src="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog4-150x150.jpg'%}"-->
+<!--                                                       class="attachment-thumbnail size-thumbnail wp-post-image" alt=""-->
+<!--                                                       srcset="{% static 'assets/wp-content/uploads/sites/4/2019/11/blog4-150x150.jpg'%} 150w, {% static 'assets/wp-content/uploads/sites/4/2019/11/blog4-70x70.jpg 70w'%}"-->
+<!--                                                       sizes="(max-width: 150px) 100vw, 150px"/></noscript>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div class="entry-header">-->
+<!--                                    <h6>-->
+<!--                                        <a href="../you-have-a-great-business-idea-2/index.html">You have a Great-->
+<!--                                            Business Idea?</a>-->
+<!--                                    </h6>-->
+<!--                                    <span class="post-on">-->
+<!--                            <span class="entry-date">November 21, 2019</span>-->
+<!--                        </span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="clearfix">-->
+<!--                                <div class="thumb">-->
+<!--                                    <a href="../building-data-analytics-software/index.html">-->
+<!--                                        <img width="150" height="150"-->
+<!--                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"-->
+<!--                                             class="attachment-thumbnail size-thumbnail wp-post-image" alt=""-->
+<!--                                             data-lazy-srcset="{% static 'assets/wp-content/uploads/sites/4/2019/09/blog3-150x150.jpg'%} 150w, {% static 'assets/wp-content/uploads/sites/4/2019/09/blog3-70x70.jpg'%} 70w"-->
+<!--                                             data-lazy-sizes="(max-width: 150px) 100vw, 150px"-->
+<!--                                             data-lazy-src="{% static 'assets/wp-content/uploads/sites/4/2019/09/blog3-150x150.jpg'%}"/>-->
+<!--                                        <noscript><img width="150" height="150"-->
+<!--                                                       src="{% static 'assets/wp-content/uploads/sites/4/2019/09/blog3-150x150.jpg'%}-->
+<!--                                                       class="attachment-thumbnail size-thumbnail wp-post-image" alt=""-->
+<!--                                                       srcset="{% static 'assets/wp-content/uploads/sites/4/2019/09/blog3-150x150.jpg'%} 150w, {% static 'assets/wp-content/uploads/sites/4/2019/09/blog3-70x70.jpg'%} 70w"-->
+<!--                                                       sizes="(max-width: 150px) 100vw, 150px"/></noscript>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div class="entry-header">-->
+<!--                                    <h6>-->
+<!--                                        <a href="../building-data-analytics-software/index.html">Building Data Analytics-->
+<!--                                            Software</a>-->
+<!--                                    </h6>-->
+<!--                                    <span class="post-on">-->
+<!--                            <span class="entry-date">September 24, 2019</span>-->
+<!--                        </span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+<!--                    </section>-->
+                </aside><!-- #secondary -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- #content -->
+{% endblock %}
